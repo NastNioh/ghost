@@ -1,0 +1,628 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/*Css première partie*/
+main{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(#5d1924,#ffb475);
+}
+.Ecriture{
+    position: absolute;
+    top:5%;
+    left:50%;
+    transform: translate(-50%);
+    z-index: 2;
+}
+.Ecriture h1{
+    font-size: 5vh;
+}
+
+.color-box{
+    position: absolute;
+    margin-left: -80%;
+    margin-top: 40%;
+    background: linear-gradient(#ffefd4,#e18e2c);
+    border-radius: 20px 20px 20px 20px;
+    height: 50%;
+    width: 50%;
+    
+}
+
+main::before
+{
+    content:'';
+    position:absolute;
+    top:0;
+    Left:0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(#47342f,#fae56c);
+    clip-path: circle(30% at right 40%);
+}
+main::after
+{
+    content:'';
+    position:absolute;
+    top:0;
+    Left:0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(#575757,#030303);
+    clip-path: circle(20% at 10% 10%);
+}
+
+.Club{
+    position: relative;
+    margin-top: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    flex-wrap: wrap;
+    z-index: 1;
+
+}
+.Club .card{
+ position:relative;
+ width: 280px;
+ height: 450px;
+ margin: 50px;
+ box-shadow: 20px 20px 20px 50px rgba(0,0, 0, 0.5);
+ border-radius: 15px;
+ background: rgba(255, 255, 255, 0.1);
+ overflow: hidden;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ border-top: 1px  solid rgba(255, 255, 255, 0.5);
+ border-left: 1px solid rgba(255, 255, 255, 0.5);
+ backdrop-filter: blur(5px);
+}
+.Club .card .content{
+      padding:20px;
+      text-align: center;
+      transform: translateY(100px);
+      opacity: 0;
+      transition: 0.5s;
+      
+}
+.Club .card:hover .content{
+    transform: translateY(0px);
+    opacity: 1;
+}
+
+.Club .card .content h3{
+    font-size: 1.8em;
+    color: #ffff;
+    z-index: 1;
+}
+.Club .card .content p{
+    font-size: 1em;
+    color:rgb(0, 0, 0);
+    font-weight: 300;
+}
+button{
+    position: relative;
+    display: inline-block;
+    padding: 8px 20px;
+    margin-top: 15px;
+    background: #fff;
+    color:rgb(0, 0, 0);
+    border-radius: 20px ;
+    text-decoration: none;
+    font-weight: 500;
+    box-shadow: 0 5px 15px rgba(0,0, 0, 0.2);
+}
+.C2E{
+    width: 95PX;
+    height: 95PX;
+    border-radius: 50%;
+    margin-top: 35%;
+    margin-bottom: 5%;
+    display: relative;
+}
+.C3LF{
+        width: 95PX;
+        height: 95PX;
+        border-radius: 50%;
+        margin-top: 35%;
+        margin-bottom: 5%;
+        display: relative;
+}
+.CYBERSECURITE{
+    width: 95PX;
+    height: 95PX;
+    border-radius: 50%;
+    margin-top: 35%;
+    margin-bottom: 5%;
+    display: relative;
+
+}
+.MULTIMEDIA{
+        width: 95PX;
+        height: 95PX;
+        border-radius: 50%;
+        margin-top: 35%;
+        margin-bottom: 5%;
+        display: relative;
+}
+
+
+
+/*-----------------------------------------Css 2ème partie------------------------------*/
+h2 {
+    text-align: center;
+    margin-top: 0;
+    font-size: 120px;
+    font-weight: 900rem;
+}
+
+h3 {
+    text-align: center;
+    font-size: 60px;
+}
+
+.basket,
+.basket1,
+.basket2 {
+    display: flex;
+    gap: 20px;
+}
+
+.basket1 {
+    margin-left: 20%;
+    margin-top: 50px;
+}
+
+.basket2 {
+    margin-top: 50px;
+}
+
+h3,
+h2,
+h4
+ {
+    color: rgb(0, 0, 0)
+}
+
+h4 {
+    text-align: center;
+    font-size: 30px;
+}
+
+.img1,
+.img2,
+.img3,
+.img4,
+.img5,
+.img6 {
+    border-radius: 30px;
+}
+
+.cute {
+    padding-bottom: 50px;
+    background-image: url("../images/madison.jpg");
+}
+
+.basket img,
+.basket1 img,
+.basket2 img {
+    transition: all 0.6s;
+}
+
+.basket img:hover,
+.basket1 img:hover,
+.basket2 img:hover {
+    opacity: 0.4;
+    transform: scale(1.04);
+}
+
+.basket,
+.basket1,
+.basket2 {
+    position: relative;
+}
+
+.equipe,
+.equipe1,
+.supporters,
+.supporters1,
+.merites,
+.merites1 {
+    position: absolute;
+    font-size: x-large;
+    font-weight: bolder;
+    color: white
+}
+
+.equipe {
+    left: 15.5%;
+    top: 45%;
+}
+
+.equipe1 {
+    left: 53%;
+    top: 45%;
+}
+
+.supporters {
+    left: 18%;
+    top: 45%;
+}
+
+.supporters1 {
+    left: 56.5%;
+    top: 45%;
+}
+
+.merites {
+    left: 8.5%;
+    top: 45%;
+}
+
+.merites1 {
+    left: 27.5%;
+    top: 35%;
+}
+
+.d1 {
+    left: -40%;
+    width: 540px;
+    height: 360px;
+    margin: 50px auto;
+    box-shadow: 15px 15px 15px 0 rgb(0, 0, 0);
+    background-color: #EDEDED;
+    background-size: contain;
+    animation: fondu 15s ease-in-out infinite both;
+}
+
+.conteneurs {
+    max-width: 576px;
+    margin: 50px auto;
+}
+
+.d1:hover {
+    animation-play-state: paused;
+}
+
+@keyframes fondu {
+    0% {
+        background-image: url("../images/image1.JPG");
+    }
+    33.33% {
+        background-image: url("../images/image\ 4.JPG");
+    }
+    66.67% {
+        background-image: url("../images/image22.JPG");
+    }
+    100% {
+        background-image: url("../images/IMG_0032.JPG");
+    }
+}
+
+.d3 {
+    left: -40%;
+    width: 540px;
+    height: 360px;
+    margin: 50px auto;
+
+    box-shadow: 15px 15px 15px 0 rgb(0, 0, 0);
+    background-color: #EDEDED;
+    background-size: contain;
+    animation: fondu1 15s ease-in-out infinite both;
+}
+@keyframes fondu1 {
+    0% {
+        background-image: url("../images/algo1.jpg");
+    }
+    33.33% {
+        background-image: url("../images/algo3.jpg");
+    }
+    66.67% {
+        background-image: url("../images/algo2.jpg");
+    }
+
+}
+
+.d3:hover {
+    animation-play-state: paused;
+}
+
+/*------------------------------------------------Troisième Partie----------------------------*/
+section{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background :linear-gradient(#ffb475,#5d1924); 
+    overflow: hidden;
+    
+    
+}
+.Writing h4{
+    font-size: 3rem;
+    text-align: center;
+    padding-top: 30px;
+}
+
+.slide-container{
+    width: 100%;
+    height: 75vh;
+    position: sticky;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    justify-content: center;
+    background: linear-gradient(to right,rgba(255,179,117,255), rgba(179,27,16,255));
+}
+.image-slider{
+    width: 100%;
+    height: 100px;
+    
+    position: absolute;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.7s;
+}
+.slides-div{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 30px 0 30px;
+}
+
+.img{
+    position: relative;
+    width: 150px;
+    height: 280px;
+    transition: 0.2s;
+    filter: saturate(10%);
+}
+.button{
+    position: absolute;
+    width: 150px;
+    height: 300px;
+    
+    transition: 0.2s;
+    background-color: rgba(0, 0, 0, 0.4);
+    box-shadow: 20px 20px 0px    rgba(0,0, 0, 0.5);
+}
+.button:hover{
+    background-color: rgba(0, 0, 0, 0.2);
+}
+#slider-span1:target~ .image-slider #img1,
+#slider-span1:target~ .image-slider #button-1{
+    width: 250px;
+    height: 385px;
+    background-color: transparent;
+    filter: saturate(100%);
+}
+
+#slider-span2:target~ .image-slider #img2,
+#slider-span2:target~ .image-slider #button-2{
+    width: 250px;
+    height: 385px;
+    background-color: transparent;
+    filter: saturate(100%);
+}
+
+#slider-span3:target~ .image-slider #img3,
+#slider-span3:target~ .image-slider #button-3{
+    width: 250px;
+    height: 385px;
+    background-color: transparent;
+    filter: saturate(100%);
+}
+
+#slider-span4:target~ .image-slider #img4,
+#slider-span4:target~ .image-slider #button-4{
+    width: 250px;
+    height: 385px;
+    background-color: transparent;
+    filter: saturate(100%);
+}
+
+#slider-span5:target~ .image-slider #img5,
+#slider-span5:target~ .image-slider #button-5{
+    width: 250px;
+    height: 385px;
+    background-color: transparent;
+    filter: saturate(100%);
+}
+
+#slider-span6:target~ .image-slider #img6,
+#slider-span6:target~ .image-slider #button-6{
+    width: 250px;
+    height: 385px;
+    background-color: transparent;
+    filter: saturate(100%);
+}
+
+
+
+
+
+
+
+/*Responsivité première partie*/
+@media  screen and (max-width: 709px) {
+    .Ecriture h1{
+        position: fixed;
+        top: 20px;
+        left: 20px;
+        font-size: 35px;
+    }
+    
+}
+@media  screen and (max-width: 690px) {
+    .slide-container{
+        width: 100%;
+        height: 40vh;
+    
+        
+        align-items: center;
+        overflow: hidden;
+        justify-content: center;
+        background: linear-gradient(to right,rgba(255,179,117,255), rgba(179,27,16,255));
+    }
+    .image-slider{
+        width: 70%;
+        height: 200px;
+   
+        transition: 0.7s;
+    }
+    .slides-div{
+        display:flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .img{
+        
+        width: 150px;
+        height: 280px;
+    
+        transition: 0.2s;
+        filter: saturate(10%);
+    }
+    .button{
+        position: absolute;
+        width: 100px;
+        height: 300px;
+        transition: 0.2s;
+        background-color: rgba(0, 0, 0, 0.4);
+        box-shadow: 20px 20px 0px    rgba(0,0, 0, 0.5);
+    }
+    .button:hover{
+        background-color: rgba(0, 0, 0, 0.2);
+    }
+    #slider-span1:target~ .image-slider #img1,
+    #slider-span1:target~ .image-slider #button-1{
+        width: 250px;
+        height: 385px;
+        background-color: transparent;
+        filter: saturate(100%);
+    }
+    
+    #slider-span2:target~ .image-slider #img2,
+    #slider-span2:target~ .image-slider #button-2{
+        width: 250px;
+        height: 385px;
+        background-color: transparent;
+        filter: saturate(100%);
+    }
+    
+    #slider-span3:target~ .image-slider #img3,
+    #slider-span3:target~ .image-slider #button-3{
+        width: 250px;
+        height: 385px;
+        background-color: transparent;
+        filter: saturate(100%);
+    }
+    
+    #slider-span4:target~ .image-slider #img4,
+    #slider-span4:target~ .image-slider #button-4{
+        width: 250px;
+        height: 385px;
+        background-color: transparent;
+        filter: saturate(100%);
+    }
+    
+    #slider-span5:target~ .image-slider #img5,
+    #slider-span5:target~ .image-slider #button-5{
+        width: 250px;
+        height: 385px;
+        background-color: transparent;
+        filter: saturate(100%);
+    }
+    
+    #slider-span6:target~ .image-slider #img6,
+    #slider-span6:target~ .image-slider #button-6{
+        width: 250px;
+        height: 385px;
+        background-color: transparent;
+        filter: saturate(100%);
+    }
+    
+    
+    
+
+    
+}
+@media  screen and (max-width: 646px) {
+    .Ecriture h1{
+        position: fixed;
+        top: 20px;
+        left: 20px;
+        font-size: 25px;
+    }
+    .Club{
+        position: relative;
+        margin-top: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-width: 1200px;
+        flex-wrap: wrap;
+        z-index: 1;
+    
+    }
+
+    
+}
+
+
+
+/*Responsivité 2ème partie*/
+@media all and (max-width: 576px) {
+    .equipe,
+    .equipe1,
+    .supporters,
+    .supporters1,
+    .merites,
+    .merites1 {
+        font-size: smaller;
+        display: none;
+    }
+    .d1,
+    .d3 {
+        width: 300px;
+        height: 150px;
+    }
+    .supporters1,
+    .merites1 {
+        font-size: smaller;
+    }
+    h2{
+        font-size: 30px;
+        padding-top: 20px;
+    }
+    h3{
+        font-size: x-large;
+    }
+    h4{
+        font-size: larger;
+    }
+}
+
+@media screen and (max-width: 370px)
+ {
+    section::before
+    {   content:'';
+        position:fixed;
+        top:0;
+        Left:0;
+        width: 100%;
+        height: 110%;
+        background: linear-gradient(#47342f,#fae56c);
+        clip-path: circle(40% at right 30%);
+    }
+}
